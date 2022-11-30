@@ -51,5 +51,8 @@ start-all.sh
 
 [3] [There are 0 datanode(s) running and no node(s) are excluded in this operation](https://stackoverflow.com/quest//ions/26545524/there-are-0-datanodes-running-and-no-nodes-are-excluded-in-this-operation)
 
+[4] [Hadoop-Examples](https://github.com/Coursal/Hadoop-Examples)
+
+[5] [解决Hadoop命令方式运行WordCount异常Class WordCount$XXXMapper not found](https://blog.csdn.net/difffate/article/details/78759376)
 
 
