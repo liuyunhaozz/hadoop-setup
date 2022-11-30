@@ -8,7 +8,7 @@ source ./autossh.sh $1 $2 $3 $4 $5 $6
 # 在三台服务器中加入host, 命名为master, slave1, slave2
 source ./autohost.sh $1 $2 $3 
 ssh -o StrictHostKeyChecking=no root@slave1 'bash -s' < ./autohost.sh $1 $2 $3
-ssh -o StrictHostKeyChecking=no root@slave1 'bash -s' < ./autohost.sh $1 $2 $3
+ssh -o StrictHostKeyChecking=no root@slave2 'bash -s' < ./autohost.sh $1 $2 $3
 
 # 安装openjdk
 yum install -y java-1.8.0-openjdk
