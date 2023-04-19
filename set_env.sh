@@ -1,4 +1,4 @@
-# 配置环境变量
+# Configure environment variables
 echo "export JAVA_HOME=\$(readlink -f /usr/bin/java | sed "s:bin/java::")
 export HADOOP_HOME=/home/modules/hadoop-2.8.3
 export PATH=\$JAVA_HOME/bin:\$PATH

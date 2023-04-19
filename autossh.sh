@@ -1,9 +1,10 @@
 #!/bin/bash
 # author:Fire
  
-# 使用办法： 在任意一台服务器上运行该脚本，则可以使指定服务器集群之间实现SSH互信
- 
-# 以下变量从上到下为主机IP数组，配置SSH的用户名数组，密码数组
+# How to use: Run this script on any server to enable SSH mutual trust between the specified server clusters 
+
+
+# The following variables are the host IP array from top to bottom, the user name array for configuring SSH, and the password array
 servers=($1 $2 $3)
 users=(root root root)
 passwords=($4 $5 $6)
@@ -15,7 +16,7 @@ user_size=${#users[@]}
 password_size=${#passwords[@]}
  
 if [ $server_size -ne $user_size ] || [ $server_size -ne $password_size ]; then 
-	echo "参数数量不匹配"
+	echo "Mismatched number of arguments"
 	exit 1
 fi
  
@@ -97,8 +98,7 @@ expect "*#*#*#"
 EOF
 }
  
- 
-# 下面是主函数
+# The following is the main function 
 size=0
 checkSize
  
@@ -115,5 +115,5 @@ do
 	done
 done
  
-## 主函数结束
+## End of the main function
 
